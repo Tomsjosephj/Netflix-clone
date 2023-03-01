@@ -1,0 +1,454 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+
+body{
+    
+    background: black;
+    font-family: sans-serif;
+     color: white;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image:  linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)),url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+    
+   
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+
+nav button{
+    border: 0;
+    outline: 0;
+    background:#db0001;
+    color: white;
+    padding: 7px 20px;
+    font-size: 15px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+select{
+    border: 0;
+    outline: 0;
+    background:#db0001;
+    color: white;
+    padding: 7px 20px;
+    font-size: 15px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+
+}
+nav button:hover{
+    transform: translateZ(10px)
+}
+.language-btn{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid white;
+}
+.language-btn img{
+    width: 10px;
+    margin-left: 10px;
+}
+.header-content{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  margin-top: 100px;
+}
+.header-content h1{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    max-width: 650px;
+}
+.header-content h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+
+}
+
+
+.email-signup{
+    background: white;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.email-signup input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+
+}
+select option{
+    background: rgb(34, 33, 33);
+    color: white;
+    padding: 10px;
+}
+
+.email-signup button{
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 20px 20px;
+}
+/*---features----*/
+
+.features{
+    padding: 50px 12%;
+    font-size: 22px;
+    
+
+}
+
+ .row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+ .text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+
+}
+
+.img-col img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+
+
+.text-col h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+}
+
+
+
+
+.img-col video{
+    width: 335px;
+    height: 197.68px;
+    position: absolute;
+    left: 115px;
+    top: 100px;
+    z-index: -2;
+
+}
+.row{
+    position: relative;
+}
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+}
+.faq h2{
+    font-size: 2.125rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+.accordion{
+    padding: 60px auto ;
+    width: 100%;
+    max-width: 750px;
+}
+.faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform .5s;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.accordion .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, paddding 0.5s;
+}
+
+.accordion input[type="radio"]:checked +label +.content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordion input[type="radio"]:checked +label::after{
+    transform: rotate(135deg);
+}
+
+
+
+
+.lastinput p{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.lastinput{
+    padding-bottom: 80px;
+}
+
+.footer{
+    padding: 50px 15% 10px;
+    border-top: solid 6px #333;
+    color: #777;
+}
+
+.footer h2{
+    
+    font-size: 18px;
+}
+
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+.footer .col a{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer .row .col a{
+    text-decoration: none;
+    color: rgb(112, 102, 102);
+    margin-bottom: 15px;
+    font-size: 14px;
+    position: relative;
+
+}
+
+.footer .row .col a::after{
+    content:'';
+    position: absolute;
+    background-color: grey;
+    height: 1px;
+    width: 0;
+    left: 0;
+    bottom: -2px;
+}
+
+.footer .row .col a:hover::after{
+    width: 40%;
+}
+
+.lastinput{
+    margin-top: 50px;
+}
+
+.lastinput p{
+    font-size: 20px;
+}
+
+.lastbtn{
+    border: 1px solid white;
+    margin: 0;
+    background: transparent;
+}
+
+
+
+
+/*footer*/
+
+button{
+    border: 0;
+    outline: 0;
+    background:#db0001;
+    color: white;
+    padding: 7px 20px;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.netflix-india{
+    font-size:14px ;
+    
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width:600px){
+    .logo{
+        width: 100px;
+    }
+    nav button{
+        padding: 5px 10px;
+    }
+    .language-btn{
+        padding: 5px 10px;
+    }
+    .header-content{
+        position: unset;
+        transform: none;
+        padding-top: 150px;
+    }
+    .header-content h1{
+        font-size: 30px;
+    }
+    .email-signup button{
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+    .text-col , .img-col{
+
+        flex-basis: 100%;
+
+    }
+    .features h2{
+        font-size: 30px;
+    }
+    .features p{
+        font-size: 15px ;
+    }
+    .row:nth-child(2), .row:nth-child(4){
+        flex-direction: column-reverse;
+    }
+
+    .features .row{
+        padding: 10px 0
+        ;
+    }
+   
+     .hello{
+         width:  400px;
+            height: 250px;
+        }
+        .img-col video{
+            width: 150px;
+            height: 200px;
+            position: absolute;
+            left: 105px;
+            top: 100px;
+            z-index: -2;
+    }
+    .img-col img{
+        width: 272.5px;
+    }
+    .footer .row .col a::after{
+        content: '';
+        position: absolute;
+        background-color: grey;
+        height: 1px;
+        width: 0;
+        left: 0;
+        bottom: -2px;
+    }
+    
+    .footer .row .col a:hover::after{
+        width: 40%;
+    }
+    .footer .row .col{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 50%;
+    }
+    .faq h2{
+        font-size: 20px;
+        padding-bottom: 30px;
+    }
+    .accordion .content{
+        font-size: 14px;
+
+    }
+
+    .accordion li label{
+        padding-left: 10px;
+        font-size: 14px;
+    }
+    label::after{
+        font-size: 22px;
+    }
+
+    .netflix-india{
+        margin-top: 20px;
+    }
+    
+
+}
+
+
+
+ 
+
+
+
+
